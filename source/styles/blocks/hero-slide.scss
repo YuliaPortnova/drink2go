@@ -2,8 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
   max-width: 280px;
+  margin: 0 auto 10px auto;
+
+  @media (min-width: $vp-768) {
+    order: 1;
+    max-width: 476px;
+    margin: 0 auto;
+  }
 }
 
 .hero-slide__img {
@@ -22,6 +28,13 @@
   line-height: 133%;
   text-align: center;
   letter-spacing: 0.02em;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 16px;
+
+    font-size: 56px;
+    line-height: 143%;
+  }
 }
 
 .hero-slide__description {
@@ -31,15 +44,25 @@
   font-size: 14px;
   line-height: 143%;
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 160%;
+  }
 }
 
 .hero-slide__price-container {
   display: flex;
-  gap: 7px;
   flex-wrap: wrap;
   align-items: flex-start;
   margin: 0;
   padding: 0 25px;
+
+  gap: 8px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 20px;
+  }
 }
 
 .hero-slide__old-price {
@@ -49,6 +72,10 @@
   line-height: 200%;
   color: $color-base-primary;
   text-decoration: line-through;
+
+  @media (min-width: $vp-768) {
+    margin-left: auto;
+  }
 }
 
 .hero-slide__price {
@@ -57,10 +84,20 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 160%;
+
+  @media (min-width: $vp-768) {
+    margin-right: 15px;
+  }
 }
 
 .hero-slide__button {
   z-index: 1;
+
   margin-left: auto;
   padding-left: 21px;
+
+  @media (min-width: $vp-768) {
+    margin-right: auto;
+    margin-left: 0;
+  }
 }

@@ -1,5 +1,9 @@
 .slider {
   background-color: $color-bg-flat-white;
+
+  @media (min-width: $vp-768) {
+    background-image: linear-gradient(to top, $color-base-white, $color-base-white 188px, $color-bg-flat-white 188px, $color-bg-flat-white);
+  }
 }
 
 .slider__container {
@@ -7,6 +11,11 @@
 
   min-height: 656px;
   padding: 20px 20px 60px;
+
+  @media (min-width: $vp-768) {
+    min-height: 828px;
+    padding: 60px 60px 0;
+  }
 }
 
 .slider__list {
@@ -23,6 +32,10 @@
 
   &--active {
     display: block;
+
+    @media (min-width: $vp-768) {
+      display: grid;
+    }
   }
 }
 
@@ -47,6 +60,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    width: 80px;
+  }
 
   &--prev {
     &:hover {
@@ -83,8 +100,9 @@
   }
 
   &:disabled {
-    cursor: auto;
     background-image: none;
+
+    pointer-events: none;
 
     &::before {
       background-color: $color-base-gray;
@@ -105,6 +123,11 @@
     mask-image: url("../../icons/left-arrow.svg");
     mask-position: center;
     mask-repeat: no-repeat;
+
+    @media (min-width: $vp-768) {
+      top: 310px;
+      left: 30px;
+    }
   }
 }
 
