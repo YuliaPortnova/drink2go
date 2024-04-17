@@ -1,8 +1,10 @@
 .hero-slide {
-  align-content: start;
+  @media (min-width: $vp-1440) {
+    align-content: start;
 
-  gap: 30px;
-  grid-template-columns: 600px 1fr;
+    gap: 30px;
+    grid-template-columns: 600px 1fr;
+  }
 }
 
 .hero-slide__image-wrapper {
