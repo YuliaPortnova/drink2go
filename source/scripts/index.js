@@ -28,7 +28,7 @@ const initSlider = () => {
   const checkDisabledButtons = (index) => {
     prevButton.disabled = (index === 0);
     nextButton.disabled = (index === (slides.length - 1));
-  }
+  };
 
   sliderControlsList.addEventListener('click', (event) => {
     if (event.target.matches('.slider__control')) {
@@ -97,7 +97,7 @@ const initPrice = () => {
   inputMaxPrice.addEventListener('input', () => {
     slider.noUiSlider.set([inputMinPrice.value, inputMaxPrice.value]);
   });
-}
+};
 
 initPrice();
 
