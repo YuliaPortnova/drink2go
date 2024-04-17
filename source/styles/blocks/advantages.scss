@@ -1,3 +1,57 @@
-.advantages {
-  //
+.advantages__container {
+  padding: 50px 20px 60px;
+}
+
+.advantages__title {
+  margin: 0 0 5px 0;
+}
+
+.advantages__detailed-title {
+  margin: 0 0 35px 0;
+}
+
+.advantages__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 32px;
+}
+
+.advantages__item {
+  text-align: center;
+  padding-top: 66px;
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 52px 56px;
+
+  &--speed {
+    background-image: url("../../icons/icon-speed.svg");
+  }
+
+  &--convenience {
+    background-image: url("../../icons/icon-convenience.svg");
+  }
+
+  &--cheerfulness {
+    background-image: url("../../icons/icon-cheerfulness.svg");
+  }
+
+  &--eco {
+    background-image: url("../../icons/icon-eco.svg");
+  }
+}
+
+.advantages__subtitle {
+  margin: 0 0 4px 0;
+}
+
+.advantages__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 143%;
 }
