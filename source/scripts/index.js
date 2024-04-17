@@ -11,18 +11,18 @@ const initSlider = () => {
 
   let activeSlideIndex = 0;
 
-  if (!slides.length) {
+  if (slides.length === 0 || !paginationButtons || !sliderControlsList) {
     return;
   }
 
   const removeSlideActiveState = () => {
     slides[activeSlideIndex].classList.remove('slider__item--active');
-    paginationButtons && paginationButtons[activeSlideIndex].classList.remove('slider__pagination-button--active');
+    paginationButtons[activeSlideIndex].classList.remove('slider__pagination-button--active');
   };
 
   const addSlideActiveState = () => {
     slides[activeSlideIndex].classList.add('slider__item--active');
-    paginationButtons && paginationButtons[activeSlideIndex].classList.add('slider__pagination-button--active');
+    paginationButtons[activeSlideIndex].classList.add('slider__pagination-button--active');
   };
 
   const checkDisabledButtons = (index) => {
@@ -34,15 +34,19 @@ const initSlider = () => {
     if (event.target.matches('.slider__control')) {
       removeSlideActiveState();
 
-      event.target.contains(prevButton) && (activeSlideIndex -= 1);
-      event.target.contains(nextButton) && (activeSlideIndex += 1);
+      if (event.target.contains(prevButton)) {
+        activeSlideIndex -= 1;
+      }
+      if (event.target.contains(nextButton)) {
+        activeSlideIndex += 1;
+      }
 
       checkDisabledButtons(activeSlideIndex);
       addSlideActiveState();
     }
   });
 
-  paginationButtons && paginationButtons.forEach((element, index) => {
+  paginationButtons.forEach((element, index) => {
     element.addEventListener('click', () => {
       removeSlideActiveState();
       activeSlideIndex = index;
