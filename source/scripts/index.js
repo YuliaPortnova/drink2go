@@ -18,11 +18,13 @@ const initSlider = () => {
   const removeSlideActiveState = () => {
     slides[activeSlideIndex].classList.remove('slider__item--active');
     paginationButtons[activeSlideIndex].classList.remove('slider__pagination-button--active');
+    paginationButtons[activeSlideIndex].disabled = false;
   };
 
   const addSlideActiveState = () => {
     slides[activeSlideIndex].classList.add('slider__item--active');
     paginationButtons[activeSlideIndex].classList.add('slider__pagination-button--active');
+    paginationButtons[activeSlideIndex].disabled = true;
   };
 
   const checkDisabledButtons = (index) => {

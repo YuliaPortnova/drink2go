@@ -4,6 +4,11 @@
   @media (min-width: $vp-768) {
     background-image: linear-gradient(to top, $color-base-white, $color-base-white 188px, $color-bg-flat-white 188px, $color-bg-flat-white);
   }
+
+  @media (min-width: $vp-1440) {
+    background-color: $color-bg-flat-white;
+    background-image: none;
+  }
 }
 
 .slider__container {
@@ -13,8 +18,15 @@
   padding: 20px 20px 60px;
 
   @media (min-width: $vp-768) {
-    min-height: 828px;
+    min-height: 714px;
     padding: 60px 60px 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 30px 105px 84px;
+
+    background-color: $color-bg-flat-white;
+    background-image: none;
   }
 }
 
@@ -128,9 +140,78 @@
       top: 310px;
       left: 30px;
     }
+
+    @media (min-width: $vp-1440) {
+      top: 347px;
+      left: 30px;
+    }
   }
 }
 
 .slider__pagination {
   display: none;
+
+  @media (min-width: $vp-1440) {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    z-index: 2;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    transform: translateX(-50%);
+
+    gap: 8px;
+  }
+}
+
+.slider__pagination-button {
+  @media (min-width: $vp-1440) {
+    display: flex;
+    align-items: center;
+    width: 62px;
+    height: 24px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    --button-background-color: #ffffff;
+
+    &:hover {
+      opacity: 0.25;
+
+      --button-background-color: #7859cf;
+    }
+
+    &:focus {
+      outline: none;
+      opacity: 0.25;
+
+      --button-background-color: #7859cf;
+    }
+
+    &:active {
+      --button-background-color: #7859cf;
+    }
+
+    &--active {
+      opacity: 1;
+
+      pointer-events: none;
+
+      --button-background-color: #7859cf;
+    }
+
+    &::before {
+      content: "";
+
+      width: 100%;
+      height: 4px;
+
+      background-color: var(--button-background-color);
+    }
+  }
 }
