@@ -1,3 +1,66 @@
-.hero-slide {
-  //
+.hero-slide__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 280px;
+}
+
+.hero-slide__img {
+  display: block;
+}
+
+.hero-slide__new {
+  margin-bottom: 4px;
+}
+
+.hero-slide__title {
+  margin: 0 0 10px 0;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 133%;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.hero-slide__description {
+  margin: 0 0 20px 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+}
+
+.hero-slide__price-container {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.hero-slide__old-price {
+  margin-top: 5px;
+
+  font-size: 16px;
+  line-height: 200%;
+  color: $color-base-primary;
+  text-decoration: line-through;
+}
+
+.hero-slide__price {
+  margin-top: 4px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.hero-slide__button {
+  z-index: 1;
+  margin-left: auto;
+  padding-left: 21px;
 }

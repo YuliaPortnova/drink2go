@@ -1,3 +1,32 @@
 .button {
-  //
+  padding: 8px 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: $ff-montserrat;
+  text-align: center;
+  color: $color-base-white;
+
+  background-color: $color-base-primary;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-alt-primary-lighter;
+  }
+
+  &:focus {
+    background-color: $color-alt-primary-lighter;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-darker;
+  }
+
+  &:disabled {
+    background-color: $color-base-gray;
+  }
 }

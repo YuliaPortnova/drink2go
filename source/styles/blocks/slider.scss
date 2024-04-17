@@ -1,3 +1,113 @@
 .slider {
-  //
+  background-color: $color-bg-flat-white;
+}
+
+.slider__container {
+  position: relative;
+
+  min-height: 656px;
+  padding: 20px 20px 60px;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.slider__item {
+  z-index: 1;
+
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__control {
+  position: relative;
+
+  width: 20px;
+  height: 100%;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--prev {
+    &:hover {
+      background-image: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &:focus {
+      background-image: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+      outline: none;
+    }
+
+    &:active {
+      background-image: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+  }
+
+  &--next {
+    &:hover {
+      background-image: linear-gradient(-90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &:focus {
+      background-image: linear-gradient(-90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+      outline: none;
+    }
+
+    &:active {
+      background-image: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+    }
+
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:disabled {
+    cursor: auto;
+    background-image: none;
+
+    &::before {
+      background-color: $color-base-gray;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 318px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: $color-base-primary;
+
+    mask-image: url("../../icons/left-arrow.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+}
+
+.slider__pagination {
+  display: none;
 }
