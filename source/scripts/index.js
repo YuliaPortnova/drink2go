@@ -65,8 +65,8 @@ initSlider();
 
 const initPrice = () => {
   const MIN_PRICE = 0;
-  const START_MAX_PRICE = 800;
-  const MAX_PRICE = 1000;
+  const START_MAX_PRICE = 900;
+  const MAX_PRICE = 977;
 
   const slider = document.querySelector('.form__slider');
   const inputMinPrice = document.querySelector('.form__input--min-price');

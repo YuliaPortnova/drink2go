@@ -1,3 +1,19 @@
 .catalog {
-  //
+  background-color: $color-bg-lightest-grey;
+}
+
+.catalog__container {
+  padding: 50px 20px 44px;
+}
+
+.catalog__title {
+  margin: 0 0 5px 0;
+}
+
+.catalog__detailed-title {
+  margin: 0 0 20px 0;
+}
+
+.catalog__form {
+  margin-bottom: 20px;
 }
