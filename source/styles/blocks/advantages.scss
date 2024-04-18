@@ -4,6 +4,10 @@
   @media (min-width: $vp-768) {
     padding: 61px 30px 100px;
   }
+
+  @media (min-width: $vp-1440) {
+    padding: 100px 40px 120px;
+  }
 }
 
 .advantages__title {
@@ -20,6 +24,10 @@
   @media (min-width: $vp-768) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 80px;
+  }
 }
 
 .advantages__list {
@@ -34,6 +42,10 @@
   @media (min-width: $vp-768) {
     gap: 50px 30px;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $vp-1440) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -52,6 +64,14 @@
     text-align: left;
 
     background-position: top left;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 76px 0 0 0;
+
+    text-align: center;
+
+    background-position: top;
   }
 
   &--speed {
