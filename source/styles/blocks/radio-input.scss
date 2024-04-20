@@ -1,0 +1,85 @@
+.radio-input {
+  display: grid;
+
+  grid-template-columns: 34px 1fr;
+}
+
+.radio-input__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+
+  border: 2px solid $color-base-gray;
+  border-radius: 50%;
+  cursor: pointer;
+
+  appearance: none;
+
+  &:hover {
+    border-color: $color-alt-primary-lighter;
+  }
+
+  &:focus {
+    border-color: $color-alt-primary-lighter;
+    outline: none;
+  }
+
+  &:checked {
+    border-color: $color-base-primary;
+  }
+
+  &:disabled {
+    border-color: $color-alt-light-grey;
+
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+
+    display: none;
+    width: 16px;
+    height: 16px;
+
+    background-color: $color-base-primary;
+    border-radius: 50%;
+  }
+}
+
+.radio-input__input:checked::after {
+  display: block;
+}
+
+.radio-input__input:hover::after,
+.radio-input__input:focus::after {
+  display: block;
+
+  background-color: $color-base-primary;
+  opacity: 0.25;
+}
+
+.radio-input__input:disabled + .radio-input__text {
+  color: $color-base-gray;
+
+  cursor: default;
+}
+
+.radio-input__input:disabled::after {
+  display: none;
+}
+
+
+.radio-input__input[disabled]:checked::after {
+  display: block;
+
+  background-color: $color-alt-light-grey;
+}
+
+.form__buttons {
+  display: grid;
+
+  gap: 20px;
+}

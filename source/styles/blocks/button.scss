@@ -15,18 +15,32 @@
 
   &:hover {
     background-color: $color-alt-primary-lighter;
+    color: $color-base-white;
   }
 
   &:focus {
     background-color: $color-alt-primary-lighter;
     outline: none;
+    color: $color-base-white;
   }
 
   &:active {
     background-color: $color-alt-primary-darker;
+    color: $color-base-white;
   }
 
   &:disabled {
     background-color: $color-base-gray;
+    color: $color-base-white;
+    cursor: default;
+  }
+
+  &--white {
+    background-color: $color-base-white;
+    color: $color-base-primary;
+
+    &:disabled {
+      background-color: $color-alt-light-grey;
+    }
   }
 }

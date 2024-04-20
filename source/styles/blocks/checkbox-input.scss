@@ -1,0 +1,76 @@
+.checkbox-input {
+  display: grid;
+
+  grid-template-columns: 52px 1fr;
+}
+
+.checkbox-input__input {
+  position: relative;
+
+  width: 42px;
+  height: 24px;
+  margin: 0;
+
+  background-color: $color-base-gray;
+  border: 2px solid $color-base-gray;
+  border-radius: 12px;
+  cursor: pointer;
+
+  appearance: none;
+
+  &:checked {
+    background-color: $color-base-primary;
+    border-color: $color-base-primary;
+  }
+
+  &:hover {
+    background-color: rgba($color-base-primary, 0.25);
+    border-color: $color-alt-primary-lighter;
+  }
+
+  &:focus {
+    background-color: rgba($color-base-primary, 0.25);
+    border-color: $color-alt-primary-lighter;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-alt-light-grey;
+    border-color: $color-alt-light-grey;
+
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: $color-base-white;
+    border-radius: 50%;
+  }
+}
+
+.checkbox-input__input:hover::after,
+.checkbox-input__input:focus::after {
+  background-color: $color-base-white;
+}
+
+.checkbox-input__input:checked::after {
+  left: auto;
+  right: 0;
+}
+
+.checkbox-input__input:disabled + .checkbox-input__text {
+  color: $color-base-gray;
+
+  cursor: default;
+}
+
+.checkbox-input__input[disabled]:checked::after {
+  background-color: $color-base-gray;
+}

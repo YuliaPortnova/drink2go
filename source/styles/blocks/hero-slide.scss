@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   max-width: 280px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 10px;
 
   @media (min-width: $vp-768) {
     order: 1;
@@ -47,7 +47,7 @@
 }
 
 .hero-slide__title {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
 
   font-weight: 700;
   font-size: 36px;
@@ -68,7 +68,7 @@
 }
 
 .hero-slide__description {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 
   font-weight: 400;
   font-size: 14px;

@@ -1,3 +1,55 @@
 .select {
-  //
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3px;
+
+  gap: 5px;
+}
+
+.select__label {
+  margin-top: 5px;
+  padding: 0;
+
+  font-weight: 600;
+}
+
+.select__select {
+  max-width: 165px;
+  padding: 4px 26px 4px 10px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: inherit;
+  text-align: right;
+  color: $color-base-primary;
+
+  background-color: transparent;
+  background-image: url("../../icons/short-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 7px center;
+  background-size: 10px 10px;
+  border: none;
+  cursor: pointer;
+
+  appearance: none;
+
+  &:hover {
+    background-color: $color-base-secondary;
+  }
+
+  &:focus {
+    background-color: $color-base-secondary;
+    outline: none;
+  }
+
+  &:active {
+    background-image: url("../../icons/short-arrow-up.svg");
+  }
+
+  &:disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
 }

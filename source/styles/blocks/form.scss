@@ -12,7 +12,7 @@
 }
 
 .form__legend {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
   padding: 0;
 
   font-weight: 600;
@@ -20,5 +20,82 @@
 
 .form__slider {
   margin-top: 9px;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
+}
+
+.form__slider-inputs {
+  position: relative;
+
+  display: grid;
+
+  gap: 44px;
+  grid-template-columns: 1fr 1fr;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 8px;
+    height: 2px;
+
+    background-color: $color-base-gray;
+    transform: translate(-50%);
+  }
+}
+
+.form__input {
+  width: 118px;
+  padding: 6px 8px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  font-family: inherit;
+  text-align: center;
+
+  background-color: transparent;
+  border: 2px solid $color-alt-primary-lighter;
+  border-radius: 4px;
+
+  appearance: textfield;
+
+  &::placeholder {
+    color: $color-base-gray;
+
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: $color-alt-primary-darker;
+    outline: $color-alt-primary-darker solid 2px;
+  }
+
+  &:focus {
+    border-color: $color-alt-primary-darker;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $color-bg-lightest-grey;
+    border-color: $color-alt-light-grey;
+
+    pointer-events: none;
+  }
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
+}
+
+.form__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 20px;
 }

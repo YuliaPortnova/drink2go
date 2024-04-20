@@ -146,20 +146,20 @@
 
       color: $color-base-primary;
     }
+  }
+}
 
-    &::before {
-      @media (min-width: $vp-768) {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
+.main-header__link--current::before {
+  @media (min-width: $vp-768) {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
 
-        width: 100%;
-        height: 2px;
+    width: 100%;
+    height: 2px;
 
-        background-color: $color-base-primary;
-      }
-    }
+    background-color: $color-base-primary;
   }
 }
 
