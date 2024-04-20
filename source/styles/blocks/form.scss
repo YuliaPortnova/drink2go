@@ -7,6 +7,12 @@
     grid-template-columns: 223px 222px 223px;
     gap: 39px 30px;
   }
+
+  @media (min-width: $vp-1440) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 4px;
+  }
 }
 
 .form__group {
@@ -30,6 +36,10 @@
   @media (min-width: $vp-768) {
     margin-bottom: 30px;
   }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 32px;
+  }
 }
 
 .form__slider-inputs {
@@ -43,6 +53,11 @@
   @media (min-width: $vp-768) {
     grid-template-columns: 87px 88px;
     gap: 48px;
+  }
+
+  @media (min-width: $vp-1440) {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
   }
 
   &::before {
@@ -81,13 +96,7 @@
   appearance: textfield;
 
   @media (min-width: $vp-768) {
-    width: 87px;
-  }
-
-  &--max-price {
-    @media (min-width: $vp-768) {
-      width: 88px;
-    }
+    width: 100%;
   }
 
   &::placeholder {
@@ -139,10 +148,20 @@
     margin: 0 auto;
     padding-left: 1px;
   }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 10px;
+    width: 100%;
+    padding-left: 0;
+  }
 }
 
 .form__button {
   @media (min-width: $vp-768) {
     padding-left: 21px;
+  }
+
+  @media (min-width: $vp-1440) {
+    min-width: 149px;
   }
 }

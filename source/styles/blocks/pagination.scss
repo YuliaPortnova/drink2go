@@ -37,6 +37,7 @@
   &:hover,
   &:focus {
     background-color: $color-alt-primary-lighter;
+    color: $color-base-white;
   }
 
   &:active {
@@ -45,6 +46,7 @@
 
   &--disabled {
     background-color: $color-alt-light-grey;
+    color: $color-base-white;
 
     pointer-events: none;
   }
