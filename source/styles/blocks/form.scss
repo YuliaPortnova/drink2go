@@ -2,6 +2,11 @@
   display: grid;
 
   gap: 30px;
+
+  @media (min-width: $vp-768) {
+    grid-template-columns: 223px 222px 223px;
+    gap: 39px 30px;
+  }
 }
 
 .form__group {
@@ -21,6 +26,10 @@
 .form__slider {
   margin-top: 9px;
   margin-bottom: 34px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 30px;
+  }
 }
 
 .form__slider-inputs {
@@ -30,6 +39,11 @@
 
   gap: 44px;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $vp-768) {
+    grid-template-columns: 87px 88px;
+    gap: 48px;
+  }
 
   &::before {
     content: "";
@@ -42,6 +56,11 @@
 
     background-color: $color-base-gray;
     transform: translate(-50%);
+
+    @media (min-width: $vp-768) {
+      top: 46%;
+      left: calc(50% - 1px);
+    }
   }
 }
 
@@ -60,6 +79,16 @@
   border-radius: 4px;
 
   appearance: textfield;
+
+  @media (min-width: $vp-768) {
+    width: 87px;
+  }
+
+  &--max-price {
+    @media (min-width: $vp-768) {
+      width: 88px;
+    }
+  }
 
   &::placeholder {
     color: $color-base-gray;
@@ -98,4 +127,22 @@
   list-style-type: none;
 
   gap: 20px;
+}
+
+.form__buttons {
+  @media (min-width: $vp-768) {
+    grid-column: 1/-1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 279px;
+    margin: 0 auto;
+    padding-left: 1px;
+  }
+}
+
+.form__button {
+  @media (min-width: $vp-768) {
+    padding-left: 21px;
+  }
 }

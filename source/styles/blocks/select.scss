@@ -4,6 +4,11 @@
   padding-left: 3px;
 
   gap: 5px;
+
+  @media (min-width: $vp-768) {
+    padding-left: 7px;
+    gap: 8px;
+  }
 }
 
 .select__label {
@@ -11,6 +16,10 @@
   padding: 0;
 
   font-weight: 600;
+
+  @media (min-width: $vp-768) {
+    margin-left: auto;
+  }
 }
 
 .select__select {

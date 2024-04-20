@@ -18,6 +18,10 @@
 
   appearance: none;
 
+  @media (min-width: $vp-768) {
+    margin-top: -1px;
+  }
+
   &:hover {
     border-color: $color-alt-primary-lighter;
   }
