@@ -36,8 +36,9 @@
 
   &:hover,
   &:focus {
-    background-color: $color-alt-primary-lighter;
     color: $color-base-white;
+
+    background-color: $color-alt-primary-lighter;
   }
 
   &:active {
@@ -45,8 +46,9 @@
   }
 
   &--disabled {
-    background-color: $color-alt-light-grey;
     color: $color-base-white;
+
+    background-color: $color-alt-light-grey;
 
     pointer-events: none;
   }
@@ -105,7 +107,7 @@
 .pagination__link {
   display: block;
   min-width: 40px;
-  padding: 8px 8px;
+  padding: 8px;
 
   font-weight: 400;
   font-size: 16px;

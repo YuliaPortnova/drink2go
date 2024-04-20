@@ -63,6 +63,10 @@ initSlider();
 
 // Price
 
+document.head.insertAdjacentHTML(
+  'beforeend',
+  '<link rel="stylesheet" href="vendor/nouislider/nouislider.css">');
+
 const initPrice = () => {
   const MIN_PRICE = 0;
   const START_MAX_PRICE = 900;
