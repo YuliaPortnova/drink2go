@@ -17,6 +17,10 @@
 
   border-radius: 4px;
 
+  &--pinterest {
+    padding: 9px
+  }
+
   &:hover,
   &:focus {
     background-color: $color-base-secondary;
@@ -46,6 +50,8 @@
 
 .social__link--pinterest::before {
   mask-image: url("../../icons/pinterest.svg");
+  width: 22px;
+  height: 22px;
 }
 
 .social__link--ok::before {
