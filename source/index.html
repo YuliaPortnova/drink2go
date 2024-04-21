@@ -390,11 +390,12 @@
   </main>
   <footer class="page__main-footer main-footer" data-test="footer">
     <div class="main-footer__container page__leveler">
-      <div class="main-footer__group">
+      <div class="main-footer__group main-footer__group--logo">
         <a class="main-footer__logo" href="index.html" aria-label="Перезагрузить страницу.">
-          <!-- <svg class="main-footer__logo-img" role="img" aria-label="Drink2Go. Логотип магазина кофейных напитков." width="128" height="24">
-            <use xlink:href="img/stack.svg#cat-energy-logo-footer"></use>
-          </svg> -->
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logos/logo-Drink2Go-long.svg" width="170" height="36">
+            <img class="main-footer__logo-img" src="images/logos/logo-Drink2Go-short.svg" alt="Drink2go. Логотип интернет-магазина кофейных напитков." width="82" height="36">
+          </picture>
         </a>
         <p class="main-footer__text">Интернет-магазин кофейных напитков</p>
         <ul class="main-footer__social social">
@@ -415,7 +416,7 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__main-menu">
+      <div class="main-footer__group main-footer__group--main-menu">
         <h2 class="main-footer__title">Интернет-магазин</h2>
         <ul class="main-footer__nav">
           <li class="main-footer__nav-item">
@@ -432,7 +433,7 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__media-menu">
+      <div class="main-footer__group main-footer__group--media-menu">
         <h2 class="main-footer__title">Медиа</h2>
         <ul class="main-footer__nav">
           <li class="main-footer__nav-item">
@@ -446,18 +447,18 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__contacts">
+      <div class="main-footer__group main-footer__group--contacts">
         <h2 class="main-footer__title">Контакты</h2>
-        <address class="main-footer__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
-        <a class="main-footer__tel" href="tel:+79999999999">+7 (999) 999-99-99</a>
+        <address class="main-footer__address main-footer__icon-text">Санкт-Петербург, набережная реки Карповки, дом 5</address>
+        <a class="main-footer__tel main-footer__icon-text" href="tel:+79999999999">+7 (999) 999-99-99</a>
       </div>
-      <div class="main-footer__copyright">
+      <div class="main-footer__group main-footer__group--copyright ">
         <span class="main-footer__copyright-text">Разработано в</span>
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener" aria-label="Перейти на сайт компании-разработчика HTML Academy.">
           <span class="main-footer__copyright-text">HTML Academy</span>
-          <!-- <svg class="page-footer__copyright-logo" role="img" aria-label="Логотип HTML Academy." width="27" height="34">
-            <use xlink:href="img/stack.svg#html-academy-logo"></use>
-          </svg> -->
+          <svg class="main-footer__copyright-img" role="img" aria-label="Логотип HTML Academy." width="12" height="16">
+            <use xlink:href="images/logos/HTMLAcademy-logo.svg"></use>
+          </svg>
         </a>
       </div>
     </div>
