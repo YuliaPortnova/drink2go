@@ -107,16 +107,18 @@
 
   &:hover {
     border-color: $color-alt-primary-darker;
-    outline: $color-alt-primary-darker solid 2px;
+    outline: $color-alt-primary-darker solid 1px;
   }
 
   &:focus {
     border-color: $color-alt-primary-darker;
+    outline: none;
   }
 
   &:disabled {
     background-color: $color-bg-lightest-grey;
     border-color: $color-alt-light-grey;
+    color: $color-base-gray;
 
     pointer-events: none;
   }

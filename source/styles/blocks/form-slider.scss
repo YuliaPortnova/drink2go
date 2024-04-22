@@ -21,11 +21,19 @@
   }
 }
 
+.form__slider-label {
+  margin-left: -1px;
+}
+
 /* stylelint-disable selector-class-pattern */
 .form-slider .noUi-connect {
   height: 4px;
 
   background-color: $color-alt-primary-lighter;
+}
+
+.form-slider--disabled .noUi-connect {
+  background-color: $color-base-gray;
 }
 
 .form-slider .noUi-base {
@@ -63,6 +71,12 @@
   &::after {
     display: none;
   }
+}
+
+.form-slider--disabled .noUi-handle[class] {
+  pointer-events: none;
+  border-color: $color-base-gray;
+  background-color: $color-base-white;
 }
 
 .form-slider .noUi-handle[class]:hover::before,

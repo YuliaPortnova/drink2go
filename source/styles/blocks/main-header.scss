@@ -139,7 +139,8 @@
     padding: 32px 20px;
   }
 
-  &[href]:hover {
+  &[href]:hover,
+  &[href]:focus {
     color: $color-base-primary;
   }
 
@@ -148,6 +149,7 @@
 
     @media (min-width: $vp-768) {
       background-color: $color-base-secondary;
+      color: $color-base-primary;
     }
   }
 
@@ -202,6 +204,10 @@
   max-width: 180px;
   margin-left: auto;
 
+  @media (min-width: $vp-768) {
+    order: 1;
+  }
+
   @media (min-width: $vp-1440) {
     gap: 0 20px;
     max-width: 300px;
@@ -240,6 +246,12 @@
     color: $color-base-primary;
   }
 
+  &:focus {
+    @media (min-width: $vp-768) {
+      color: $color-base-primary;
+    }
+  }
+
   &:active {
     background-color: $color-base-secondary;
   }
@@ -262,8 +274,18 @@
   background-color: $color-base-primary;
 }
 
+.main-header__user-link:focus::before {
+  @media (min-width: $vp-768) {
+    background-color: $color-base-primary;
+  }
+}
+
 .main-header__user-link:active::before {
   background-color: $color-base-black;
+
+  @media (min-width: $vp-768) {
+    background-color: $color-base-primary;
+  }
 }
 
 .main-header__user-link--enter {

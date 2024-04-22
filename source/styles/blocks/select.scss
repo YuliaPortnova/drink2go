@@ -39,6 +39,7 @@
   background-position: right 7px center;
   background-size: 10px 10px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 
   appearance: none;
@@ -49,6 +50,7 @@
 
   &:focus {
     background-color: $color-base-secondary;
+    outline: none;
   }
 
   &:active {

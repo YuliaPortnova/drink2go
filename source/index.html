@@ -28,6 +28,17 @@
         </picture>
       </a>
       <p class="main-header__text">Интернет-магазин кофейных напитков</p>
+      <div class="main-header__user-menu">
+        <a class="main-header__user-link main-header__user-link--enter" href="javascript:undefined;" aria-label="Войти в систему по логину и паролю.">
+          <span class="main-header__user-text">Войти</span>
+        </a>
+        <a class="main-header__user-link main-header__user-link--cart" href="javascript:undefined;" aria-label="Перейти в корзину.">
+          <span class="main-header__user-text">Корзина</span>
+        </a>
+      </div>
+      <button class="main-header__toggle main-header__user-link js-toggle-button" type="button">
+        <span class="visually-hidden">Открыть или закрыть меню навигации по&nbsp;сайту.</span>
+      </button>
       <nav class="main-header__nav">
         <ul class="main-header__list">
           <li class="main-header__item">
@@ -44,17 +55,6 @@
           </li>
         </ul>
       </nav>
-      <div class="main-header__user-menu">
-        <a class="main-header__user-link main-header__user-link--enter" href="javascript:undefined;" aria-label="Войти в систему по логину и паролю.">
-          <span class="main-header__user-text">Войти</span>
-        </a>
-        <a class="main-header__user-link main-header__user-link--cart" href="javascript:undefined;" aria-label="Перейти в корзину.">
-          <span class="main-header__user-text">Корзина</span>
-        </a>
-      </div>
-      <button class="main-header__toggle main-header__user-link js-toggle-button" type="button">
-        <span class="visually-hidden">Открыть или закрыть меню навигации по&nbsp;сайту.</span>
-      </button>
     </div>
   </header>
 
@@ -183,6 +183,7 @@
         <form class="catalog__form form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__group">
             <legend class="form__legend">Цена</legend>
+            <!-- Для показа состояния disabled для слайдера добавьте модификатор disabled классу form-slider -->
             <div class="form__slider form-slider"></div>
             <div class="form__slider-inputs">
               <label class="form__slider-label">
@@ -275,7 +276,7 @@
             </select>
           </div>
           <ul class="catalog__products">
-            <li class="catalog__product">
+            <li class="catalog__product" tabindex="0">
               <picture>
                 <source type="image/webp" srcset="images/catalog/coffee-1@1x.webp 1x, images/catalog/coffee-1@2x.webp 2x" width="280" height="280">
                 <img class="catalog__product-image" src="images/catalog/coffee-1@1x.png" srcset="images/catalog/coffee-1@2x.png 2x" width="130" height="188" alt="Изображение товара." loading="lazy">
@@ -287,7 +288,7 @@
                 <button class="catalog__product-button button" type="button">В&nbsp;корзину</button>
               </div>
             </li>
-            <li class="catalog__product">
+            <li class="catalog__product" tabindex="0">
               <picture>
                 <source type="image/webp" srcset="images/catalog/coffee-2@1x.webp 1x, images/catalog/coffee-2@2x.webp 2x" width="280" height="280">
                 <img class="catalog__product-image" src="images/catalog/coffee-2@1x.png" srcset="images/catalog/coffee-2@2x.png 2x" width="130" height="188" alt="Изображение товара." loading="lazy">
@@ -299,7 +300,7 @@
                 <button class="catalog__product-button button" type="button">В&nbsp;корзину</button>
               </div>
             </li>
-            <li class="catalog__product">
+            <li class="catalog__product" tabindex="0">
               <picture>
                 <source type="image/webp" srcset="images/catalog/coffee-3@1x.webp 1x, images/catalog/coffee-3@2x.webp 2x" width="280" height="280">
                 <img class="catalog__product-image" src="images/catalog/coffee-3@1x.png" srcset="images/catalog/coffee-3@2x.png 2x" width="130" height="188" alt="Изображение товара." loading="lazy">
@@ -311,7 +312,7 @@
                 <button class="catalog__product-button button" type="button">В&nbsp;корзину</button>
               </div>
             </li>
-            <li class="catalog__product">
+            <li class="catalog__product" tabindex="0">
               <picture>
                 <source type="image/webp" srcset="images/catalog/coffee-4@1x.webp 1x, images/catalog/coffee-4@2x.webp 2x" width="280" height="280">
                 <img class="catalog__product-image" src="images/catal6g/coffee-4@1x.png" srcset="images/catalog/coffee-4@2x.png 2x" width="130" height="188" alt="Изображение товара." loading="lazy">
@@ -323,7 +324,7 @@
                 <button class="catalog__product-button button" type="button">В&nbsp;корзину</button>
               </div>
             </li>
-            <li class="catalog__product">
+            <li class="catalog__product" tabindex="0">
               <picture>
                 <source type="image/webp" srcset="images/catalog/coffee-5@1x.webp 1x, images/catalog/coffee-5@2x.webp 2x" width="280" height="280">
                 <img class="catalog__product-image" src="images/catalog/coffee-5@1x.png" srcset="images/catalog/coffee-5@2x.png 2x" width="130" height="188" alt="Изображение товара." loading="lazy">
@@ -335,7 +336,7 @@
                 <button class="catalog__product-button button" type="button">В&nbsp;корзину</button>
               </div>
             </li>
-            <li class="catalog__product">
+            <li class="catalog__product" tabindex="0">
               <picture>
                 <source type="image/webp" srcset="images/catalog/coffee-6@1x.webp 1x, images/catalog/coffee-6@2x.webp 2x" width="280" height="280">
                 <img class="catalog__product-image" src="images/catalog/coffee-6@1x.png" srcset="images/catalog/coffee-6@2x.png 2x" width="130" height="188" alt="Изображение товара." loading="lazy">
