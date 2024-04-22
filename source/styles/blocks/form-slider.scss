@@ -48,7 +48,7 @@
   height: 4px;
 }
 
-.form-slider .noUi-handle[class] {
+.form-slider .noUi-handle {
   top: -10px;
   right: -12px;
 
@@ -81,20 +81,20 @@
   }
 }
 
-.form-slider--disabled .noUi-handle[class] {
+.form-slider--disabled .noUi-handle {
   pointer-events: none;
   border-color: $color-base-gray;
   background-color: $color-base-white;
 }
 
-.form-slider .noUi-handle[class]:hover::before,
-.form-slider .noUi-handle[class]:focus::before {
+.form-slider .noUi-handle:hover::before,
+.form-slider .noUi-handle:focus::before {
   display: block;
 
   opacity: 0.25;
 }
 
-.form-slider .noUi-handle[class]:active::before {
+.form-slider .noUi-handle:active::before {
   display: block;
 
   opacity: 1;

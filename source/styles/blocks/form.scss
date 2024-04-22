@@ -142,6 +142,10 @@
 }
 
 .form__buttons {
+  display: grid;
+
+  gap: 20px;
+
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;

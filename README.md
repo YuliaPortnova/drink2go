@@ -1,3 +1,7 @@
+Команда npm run lint выдает ошибку ("aria-label" cannot be used on this element"), однако по критерию "HTML1-ALLY-01. Описание графики" в данном случае атрибут aria-label необходим, поэтому я его оставила.
+
+
+
 # Сборка для HTML-курсов в HTML Academy
 
 Сборка работает на gulp 4 версии

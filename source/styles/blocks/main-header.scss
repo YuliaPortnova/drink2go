@@ -148,8 +148,9 @@
     color: $color-base-black;
 
     @media (min-width: $vp-768) {
-      background-color: $color-base-secondary;
       color: $color-base-primary;
+
+      background-color: $color-base-secondary;
     }
   }
 
@@ -209,8 +210,9 @@
   }
 
   @media (min-width: $vp-1440) {
-    gap: 0 20px;
     max-width: 300px;
+
+    gap: 0 20px;
   }
 }
 

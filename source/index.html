@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="vendor/nouislider/nouislider.js" defer></script>
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-500.woff2" as="font" crossorigin="anonymous">
@@ -16,6 +16,7 @@
   <link rel="icon" type="image/png" href="favicons/icon.png">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/icon-180.png">
+  <script src="vendor/nouislider/nouislider.js" defer></script>
 </head>
 
 <body class="page">
@@ -38,7 +39,7 @@
         </a>
       </div>
       <button class="main-header__toggle main-header__user-link js-toggle-button" type="button">
-        <span class="visually-hidden">Открыть или закрыть меню навигации по&nbsp;сайту.</span>
+        <span class="visually-hidden">Открыть или закрыть меню навигации по сайту.</span>
       </button>
       <nav class="main-header__nav">
         <ul class="main-header__list">
@@ -379,7 +380,7 @@
       </div>
     </section>
     <section class="page__map map" data-test="map">
-      <h2 class="visually-hidden">Наш магазин на&nbsp;карте.</h2>
+      <h2 class="visually-hidden">Наш магазин на карте.</h2>
       <picture>
         <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x" width="1440" height="540">
         <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x" width="768" height="480">
@@ -403,17 +404,17 @@
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vk" href="javascript:undefined;" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Drink2Go во&nbsp;Вконтакте.</span>
+              <span class="visually-hidden">Drink2Go во Вконтакте.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--pinterest" href="javascript:undefined;" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Drink2Go на&nbsp;Пинтерест.</span>
+              <span class="visually-hidden">Drink2Go на Пинтерест.</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--ok" href="javascript:undefined;" target="_blank" rel="noreferrer noopener">
-              <span class="visually-hidden">Drink2Go в&nbsp;Одноклассниках.</span>
+              <span class="visually-hidden">Drink2Go в Одноклассниках.</span>
             </a>
           </li>
         </ul>
@@ -458,7 +459,7 @@
         <span class="main-footer__copyright-text">Разработано в</span>
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener" aria-label="Перейти на сайт компании-разработчика HTML Academy.">
           <span class="main-footer__copyright-text">HTML Academy</span>
-          <svg class="main-footer__copyright-img" role="img" width="12" height="16">
+          <svg class="main-footer__copyright-img" role="img" width="12" height="16" aria-label="Логотип HTML Academy.">
             <use href="icons/stack.svg#htmlacademy-logo"></use>
           </svg>
         </a>

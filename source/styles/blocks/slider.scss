@@ -53,10 +53,11 @@
 
 .slider__controls {
   position: absolute;
-  inset: 0;
 
   display: flex;
   justify-content: space-between;
+
+  inset: 0;
 }
 
 .slider__control {
@@ -189,6 +190,7 @@
 
     &:active {
       opacity: 1;
+
       --button-background-color: #7859cf;
     }
 

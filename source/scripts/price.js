@@ -8,10 +8,6 @@ const slider = document.querySelector('.form__slider');
 const inputMinPrice = document.querySelector('.form__input--min-price');
 const inputMaxPrice = document.querySelector('.form__input--max-price');
 
-document.head.insertAdjacentHTML(
-  'beforeend',
-  '<link rel="stylesheet" href="vendor/nouislider/nouislider.css">');
-
 const getSliderRange = (width) => {
   let maxPrice;
   if (width < 768) {

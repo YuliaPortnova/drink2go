@@ -1,4 +1,3 @@
-
 const sliderControlsList = document.querySelector('.slider__controls');
 const prevButton = document.querySelector('.slider__control--prev');
 const nextButton = document.querySelector('.slider__control--next');

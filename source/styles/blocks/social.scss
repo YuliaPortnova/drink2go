@@ -49,9 +49,10 @@
 }
 
 .social__link--pinterest::before {
-  mask-image: url("../../icons/pinterest.svg");
   width: 22px;
   height: 22px;
+
+  mask-image: url("../../icons/pinterest.svg");
 }
 
 .social__link--ok::before {
