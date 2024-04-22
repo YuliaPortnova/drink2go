@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<!-- linthtml-disable htmlacademy/req-single-styles -->
+<!-- Правило отключено для подключения стилей сторонней библиотеки -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,6 +20,7 @@
   <link rel="apple-touch-icon" href="favicons/icon-180.png">
   <script src="vendor/nouislider/nouislider.js" defer></script>
 </head>
+<!-- linthtml-enable htmlacademy/req-single-styles -->
 
 <body class="page">
   <header class="page__main-header main-header" data-test="header">
@@ -459,9 +462,12 @@
         <span class="main-footer__copyright-text">Разработано в</span>
         <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noreferrer noopener" aria-label="Перейти на сайт компании-разработчика HTML Academy.">
           <span class="main-footer__copyright-text">HTML Academy</span>
+          <!-- linthtml-disable htmlacademy/aria-label-misuse -->
+          <!-- Правило отключено, так как критерий "HTML1-ALLY-01. Описание графики" обязывает указывать атрибут aria-label для контентных изображений -->
           <svg class="main-footer__copyright-img" role="img" width="12" height="16" aria-label="Логотип HTML Academy.">
             <use href="icons/stack.svg#htmlacademy-logo"></use>
           </svg>
+          <!-- linthtml-enable htmlacademy/aria-label-misuse -->
         </a>
       </div>
     </div>
