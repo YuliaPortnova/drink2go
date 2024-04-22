@@ -127,7 +127,7 @@
   line-height: 160%;
 
   @media (min-width: $vp-768) {
-    margin-right: 15px;
+    margin-right: 17px;
   }
 }
 
@@ -140,9 +140,10 @@
   @media (min-width: $vp-768) {
     margin-right: auto;
     margin-left: 0;
+    padding: 9px 20px 7px;
   }
 
-  @media (min-width: $vp-768) {
+  @media (min-width: $vp-1440) {
     padding-left: 20px;
   }
 }

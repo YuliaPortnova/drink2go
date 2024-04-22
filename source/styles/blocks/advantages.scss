@@ -22,7 +22,7 @@
   margin: 0 0 35px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $vp-1440) {
@@ -76,6 +76,10 @@
 
   &--speed {
     background-image: url("../../icons/icon-speed.svg");
+
+    @media (min-width: $vp-768) {
+      background-position: 0 4px;
+    }
   }
 
   &--convenience {
@@ -88,6 +92,10 @@
 
   &--eco {
     background-image: url("../../icons/icon-eco.svg");
+
+    @media (min-width: $vp-768) {
+      background-position: 0 4px;
+    }
   }
 }
 
