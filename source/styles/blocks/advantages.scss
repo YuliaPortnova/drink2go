@@ -80,6 +80,10 @@
     @media (min-width: $vp-768) {
       background-position: 0 4px;
     }
+
+    @media (min-width: $vp-1440) {
+      background-position: top;
+    }
   }
 
   &--convenience {
@@ -95,6 +99,10 @@
 
     @media (min-width: $vp-768) {
       background-position: 0 4px;
+    }
+
+    @media (min-width: $vp-1440) {
+      background-position: top;
     }
   }
 }

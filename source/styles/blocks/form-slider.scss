@@ -12,6 +12,10 @@
     padding-top: 1px;
   }
 
+  @media (min-width: $vp-1440) {
+    padding-top: 0;
+  }
+
   &::before {
     content: "";
     position: absolute;
