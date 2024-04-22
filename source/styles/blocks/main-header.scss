@@ -72,8 +72,9 @@
   border-top: 1px solid $color-base-secondary;
 
   .is-open & {
-    display: block;
     z-index: 3;
+
+    display: block;
   }
 
   @media (min-width: $vp-768) {
@@ -108,8 +109,15 @@
   }
 }
 
+.main-header__item {
+  border-bottom: 1px solid $color-base-secondary;
+  position: relative;
+}
+
 .main-header__link {
   display: block;
+  max-width: 300px;
+  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
 
@@ -121,8 +129,6 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.02em;
-
-  border-bottom: 1px solid $color-base-secondary;
 
   @media (min-width: $vp-768) {
     padding: 32px 20px;
@@ -137,7 +143,9 @@
   &[href]:active {
     color: $color-base-black;
 
-    background-color: $color-base-secondary;
+    @media (min-width: $vp-768) {
+      background-color: $color-base-secondary;
+    }
   }
 
   &--current {
@@ -146,6 +154,29 @@
 
       color: $color-base-primary;
     }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    display: none;
+    width: 100%;
+
+    background-color: $color-base-secondary;
+  }
+}
+
+.main-header__link[href]:active::after {
+  display: block;
+
+  @media (min-width: $vp-768) {
+    display: none;
   }
 }
 
@@ -156,8 +187,9 @@
     bottom: 0;
     left: 0;
 
-    width: 100%;
+    display: block;
     height: 2px;
+    width: 100%;
 
     background-color: $color-base-primary;
   }
