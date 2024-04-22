@@ -43,10 +43,6 @@
   border-radius: 50%;
   cursor: pointer;
 
-  &:focus {
-    outline: none;
-  }
-
   &:active {
     border-color: $color-base-primary;
   }
