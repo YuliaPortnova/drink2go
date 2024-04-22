@@ -7,30 +7,30 @@ const slider = document.querySelector('.form__slider');
 const inputMinPrice = document.querySelector('.form__input--min-price');
 const inputMaxPrice = document.querySelector('.form__input--max-price');
 
-const initPrice = () => {
-  document.head.insertAdjacentHTML(
-    'beforeend',
-    '<link rel="stylesheet" href="vendor/nouislider/nouislider.css">');
+document.head.insertAdjacentHTML(
+  'beforeend',
+  '<link rel="stylesheet" href="vendor/nouislider/nouislider.css">');
 
-  let maxPrice = MAX_PRICE_MOBILE;
-  if (document.documentElement.clientWidth > 768) {
-    maxPrice = MAX_PRICE_TABLET;
+let maxPrice = MAX_PRICE_MOBILE;
+if (document.documentElement.clientWidth > 768) {
+  maxPrice = MAX_PRICE_TABLET;
+}
+
+noUiSlider.create(slider, {
+  range: {
+    'min': [MIN_PRICE],
+    'max': [maxPrice],
+  },
+  start: [MIN_PRICE, START_MAX_PRICE],
+  step: 1,
+  connect: true,
+  format: {
+    to: (value) => value.toFixed(0),
+    from: (value) => parseFloat(value),
   }
+});
 
-  noUiSlider.create(slider, {
-    range: {
-      'min': [MIN_PRICE],
-      'max': [maxPrice],
-    },
-    start: [MIN_PRICE, START_MAX_PRICE],
-    step: 1,
-    connect: true,
-    format: {
-      to: (value) => value.toFixed(0),
-      from: (value) => parseFloat(value),
-    }
-  });
-
+const initPrice = () => {
   slider.noUiSlider.on('slide', () => {
     const [min, max] = slider.noUiSlider.get();
     inputMinPrice.value = min;
@@ -46,4 +46,8 @@ const initPrice = () => {
   });
 };
 
-export { initPrice };
+const resetSlider = () => {
+  slider.noUiSlider.set([MIN_PRICE, START_MAX_PRICE]);
+};
+
+export { initPrice, resetSlider };
