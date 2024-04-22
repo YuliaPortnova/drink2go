@@ -204,6 +204,10 @@
 
   --icon: url("../../icons/phone.svg");
 
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
   &:hover,
   &:focus {
     color: $color-alt-primary-lighter;
