@@ -1,14 +1,26 @@
 .slider {
-  background-color: $color-bg-flat-white;
+  background-color: var(--bg-color);
 
   @media (min-width: $vp-768) {
-    background-image: linear-gradient(to top, $color-base-white, $color-base-white 188px, $color-bg-flat-white 188px, $color-bg-flat-white);
+    background-image: linear-gradient(to top, $color-base-white, $color-base-white 188px, var(--bg-color) 188px, var(--bg-color));
   }
 
   @media (min-width: $vp-1440) {
-    background-color: $color-bg-flat-white;
+    background-color: var(--bg-color);
     background-image: none;
   }
+}
+
+.slider:has(.slider__item--flat-white.slider__item--active) {
+  --bg-color: #f3ebe1;
+}
+
+.slider:has(.slider__item--lavender.slider__item--active) {
+  --bg-color: #eae6fc;
+}
+
+.slider:has(.slider__item--espresso.slider__item--active) {
+  --bg-color: #e5e6e8;
 }
 
 .slider__container {
@@ -25,7 +37,6 @@
   @media (min-width: $vp-1440) {
     padding: 30px 105px 84px;
 
-    background-color: $color-bg-flat-white;
     background-image: none;
   }
 }
